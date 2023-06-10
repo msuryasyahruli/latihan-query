@@ -1,0 +1,17 @@
+-- FROM dari
+-- WHERE dimana
+-- ADD 
+-- AND dan
+-- OR atau
+-- kurang <
+-- lebih >
+-- ID IN(... , ...)
+
+
+-- CREATE TABLE namatable();
+-- INSERT INTO () VALUES ()
+-- SELECT * FROM nama_table;
+-- \d daftar_kampus
+-- \d nama_table
+-- DROP TABLE nama_table;
+-- DELETE FROM nama_table WHERE isi_dalam_tabel
