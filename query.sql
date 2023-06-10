@@ -38,17 +38,53 @@ CREATE TABLE
         Foreign Key (benua_id) REFERENCES benua(id)
     );
 
-INSERT INTO negara(negara, pemerintah_id, benua_id) VALUES('Arab Saudi', 1, 1);
+INSERT INTO
+    negara(
+        negara,
+        pemerintah_id,
+        benua_id
+    )
+VALUES('Arab Saudi', 1, 1);
 
-INSERT INTO negara(negara, pemerintah_id, benua_id) VALUES('Bangladesh', 2, 1);
+INSERT INTO
+    negara(
+        negara,
+        pemerintah_id,
+        benua_id
+    )
+VALUES('Bangladesh', 2, 1);
 
-INSERT INTO negara(negara, pemerintah_id, benua_id) VALUES('Belanda', 3, 4);
+INSERT INTO
+    negara(
+        negara,
+        pemerintah_id,
+        benua_id
+    )
+VALUES('Belanda', 3, 4);
 
-INSERT INTO negara(negara, pemerintah_id, benua_id) VALUES('Belgia', 4, 4);
+INSERT INTO
+    negara(
+        negara,
+        pemerintah_id,
+        benua_id
+    )
+VALUES('Belgia', 4, 4);
 
-INSERT INTO negara(negara, pemerintah_id, benua_id) VALUES('Bulgaria', 5, 4);
+INSERT INTO
+    negara(
+        negara,
+        pemerintah_id,
+        benua_id
+    )
+VALUES('Bulgaria', 5, 4);
 
-INSERT INTO negara(negara, pemerintah_id, benua_id) VALUES('Dominika', 6, 2);
+INSERT INTO
+    negara(
+        negara,
+        pemerintah_id,
+        benua_id
+    )
+VALUES('Dominika', 6, 2);
 
 SELECT * INTO negara;
 
@@ -80,7 +116,7 @@ CREATE Table
         id INT GENERATED ALWAYS AS IDENTITY,
         nama VARCHAR(255),
         lokasi VARCHAR(255),
-        PRIMARY KEY(id), 
+        PRIMARY KEY(id),
         produk_1 INT,
         produk_2 INT,
         produk_3 INT,
@@ -91,15 +127,65 @@ CREATE Table
         Foreign Key (produk_4) REFERENCES produk(id)
     );
 
-INSERT INTO penjual(nama, lokasi, produk_1, produk_2) VALUES('dadang','mall', 1, 2);
+INSERT INTO
+    penjual(
+        nama,
+        lokasi,
+        produk_1,
+        produk_2
+    )
+VALUES
+('dadang', 'mall', 1, 2);
 
-INSERT INTO penjual(nama, lokasi, produk_1, produk_2, produk_3, produk_4) VALUES('asep','pinggir jalan', 1, 2, 4, 5);
+INSERT INTO
+    penjual(
+        nama,
+        lokasi,
+        produk_1,
+        produk_2,
+        produk_3,
+        produk_4
+    )
+VALUES
+(
+        'asep',
+        'pinggir jalan',
+        1,
+        2,
+        4,
+        5
+    );
 
-INSERT INTO penjual(nama, lokasi, produk_1) VALUES('ujang','pasar', 3);
+INSERT INTO
+    penjual(nama, lokasi, produk_1)
+VALUES('ujang', 'pasar', 3);
 
-INSERT INTO penjual(nama, lokasi, produk_1, produk_2, produk_3) VALUES('cecep','kantin sekola', 1, 2, 5); 
+INSERT INTO
+    penjual(
+        nama,
+        lokasi,
+        produk_1,
+        produk_2,
+        produk_3
+    )
+VALUES
+(
+        'cecep',
+        'kantin sekola',
+        1,
+        2,
+        5
+    );
 
-INSERT INTO penjual(nama, lokasi, produk_1, produk_2) VALUES('omar','depan sekolah', 3, 5);
+INSERT INTO
+    penjual(
+        nama,
+        lokasi,
+        produk_1,
+        produk_2
+    )
+VALUES
+('omar', 'depan sekolah', 3, 5);
 
 SELECT * INTO penjual;
 
