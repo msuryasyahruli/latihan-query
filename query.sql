@@ -10,30 +10,30 @@ CREATE TABLE
     );
 
 INSERT INTO
-    pemerintah(presiden)
+    kepala_negara(presiden)
 VALUES ('Raja Salman Bin Abdulaziz');
 
-INSERT INTO pemerintah(presiden) VALUES ('Presiden Abdul Hamid');
+INSERT INTO kepala_negara(presiden) VALUES ('Presiden Abdul Hamid');
 
-INSERT INTO pemerintah(presiden) VALUES ('Raja Willem Alexander');
+INSERT INTO kepala_negara(presiden) VALUES ('Raja Willem Alexander');
 
-INSERT INTO pemerintah(presiden) VALUES('Raja Philippe');
+INSERT INTO kepala_negara(presiden) VALUES('Raja Philippe');
 
-INSERT INTO pemerintah(presiden) VALUES ('Presiden Rumen Radev');
+INSERT INTO kepala_negara(presiden) VALUES ('Presiden Rumen Radev');
 
 INSERT INTO
-    pemerintah(presiden)
+    kepala_negara(presiden)
 VALUES ('Presiden Charles Savarin');
 
-SELECT * FROM pemerintah;
+SELECT * FROM kepala_negara;
 
 CREATE TABLE
     negara(
         id INT GENERATED ALWAYS AS IDENTITY,
         negara VARCHAR(255),
         PRIMARY KEY(id),
-        pemerintah_id INT,
-        FOREIGN KEY(pemerintah_id) REFERENCES pemerintah(id),
+        kepala_negara_id INT,
+        FOREIGN KEY(kepala_negara_id) REFERENCES kepala_negara(id),
         benua_id INT,
         Foreign Key (benua_id) REFERENCES benua(id)
     );

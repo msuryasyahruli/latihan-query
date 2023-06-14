@@ -8,10 +8,11 @@
 -- ID IN(... , ...)
 
 
--- CREATE TABLE namatable();
--- INSERT INTO () VALUES ()
+-- CREATE TABLE nama_table();
+-- INSERT INTO nama_table() VALUES ()
 -- SELECT * FROM nama_table;
--- \d daftar_kampus
 -- \d nama_table
+-- \c 
+-- \c nama_table
 -- DROP TABLE nama_table;
 -- DELETE FROM nama_table WHERE isi_dalam_tabel
